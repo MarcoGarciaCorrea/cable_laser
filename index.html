@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!--Comienzo de Header-->
     <header class="sticky-top">
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg bg-ligth ">
@@ -41,22 +42,26 @@
                                 <a class="nav-link" href="#">Contactanos</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-outline-primary" type="submit">Te llamamos</button>
-                        </form>
+                        <!-- Boton que llama al modal a través de su ID -->
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Te llamamos</button>
+
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+    <!--Fin de Header-->
+
+    <!--Comienzo de Seccion principal-->
     <section class="container-lg mt-5 bg-ligth">
         <div class="row">
-            <div class="col-sm-12 col-lg-6" >
+            <div class="col-sm-12 col-lg-6">
                 <h1 class="display-4"> Brindamos servicio de Cable e Internet por fibra optica</h1>
                 <p class="pt-4">Gracias a nuestros servicios de cable e internet mantente conectado</p>
-                <form class="d-flex pt-5">
-                    <button class="btn btn-outline-primary" type="submit">Te llamamos</button>
-                </form>
+                <!-- Boton que llama al modal a través de su ID -->
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalContacto">Te llamamos</button>
             </div>
             <div class="col-sm-12 col-lg-6 ">
                 <img src=".\imagenes\conectado.svg" alt="" class="float-end">
@@ -64,8 +69,42 @@
         </div>
 
     </section>
+    <!--Fin de Seccion principal-->
 
-    <!-- JavaScript Bundle with Popper -->
+    <!-- Inicio de contenido de Modal -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fin de contenido de Modal -->
+
+    <!-- JavaScript para bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
