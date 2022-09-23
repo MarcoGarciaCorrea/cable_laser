@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Laser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Comienzo de Header-->
+    <header class="sticky-top">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg bg-ligth ">
+                <div class="container-fluid py-2">
+                    <a class="navbar-brand" href="index.html">
+                        <img src=".\imagenes\LogoPequeno.png" alt="Bootstrap" width="150" height="70">
+                    </a>
+                    <!--ESTE BOTON PERMITE EL COLAPSO-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-lg-0 fs-5 fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contactos.html">Contactanos</a>
+                            </li>
+                        </ul>
+                        <!-- Boton que llama al modal a través de su ID -->
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Te llamamos</button>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Fin de Header-->
+    
+    <div id="cuerpo">
+        <div class="formularioContacto">
+            <h5>Contactanos para resolver tus dudas</h5>
+            <form action="">
+                <select>
+                    <option value="d0">Distrito</option>
+                    <option value="d1">Chaclacayo</option>
+                    <option value="d2">El Agustino</option>
+                    <option value="d3">Pangoa</option>
+                    <option value="d4">Mazamari</option>
+                    <option value="d5">Satipo</option>
+                </select><br>
+                <input type="text" placeholder="Nombres"><br>
+                <input type="text" placeholder="Apellidos"><br>
+                <select>
+                    <option value="doc0">Tipo de documento</option>
+                    <option value="doc1">DNI</option>
+                    <option value="doc2">Carnet de Extranjeria</option>
+                    <option value="doc3">RUC</option>
+                </select><br>
+                <input type="text" placeholder="Nro. Documento"><br>
+                <input type="text" placeholder="Correo"><br>
+                <input type="text" placeholder="Celular"><br>
+                <textarea placeholder="Mensaje"></textarea><br>
+                <input type="submit" name="envio" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+        <div class="mapa">
+            <iframe src="https://goo.gl/maps/XKkaow56jtCTNr136"></iframe>
+        </div>
+    </div>
+    
+    <div class="container bg-dark text-primary"></div>
+
+    
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

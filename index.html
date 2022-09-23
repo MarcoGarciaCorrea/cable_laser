@@ -13,12 +13,12 @@
 
 <body>
     <!--Comienzo de Header-->
-    <header class="sticky-top">
-        <div class="container-lg">
-            <nav class="navbar navbar-expand-lg bg-ligth ">
+    <header class="sticky-top container">
+        <div class="">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid py-2">
                     <a class="navbar-brand" href="index.html">
-                        <img src=".\imagenes\LogoPequeno.png" alt="Bootstrap" width="150" height="70">
+                        <img src=".\imagenes\LogoPequeno.png" alt="Logo" width="150" height="70">
                     </a>
                     <!--ESTE BOTON PERMITE EL COLAPSO-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-lg-0 fs-5 fw-bolder">
+                        <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
@@ -71,6 +71,70 @@
     </section>
     <!--Fin de Seccion principal-->
 
+    <section class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Básico</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">S/.100<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>100 Mbps</li>
+                            <li>modem</li>
+                            <li>repetidor</li>
+                            <li>soporte 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Contratar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Intermedio</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">S/.120<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>300 Mbps</li>
+                            <li>modem</li>
+                            <li>repetidor</li>
+                            <li>soporte 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Contratar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Plus</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">S/.150<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>500 Mbps</li>
+                            <li>modem</li>
+                            <li>repetidor</li>
+                            <li>soporte 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Contratar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- Inicio de contenido de Modal -->
     <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -82,20 +146,20 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1" class="form-label">celular</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <label class="form-check-label" for="exampleCheck1">aceptar terminos y condiciones</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
 
