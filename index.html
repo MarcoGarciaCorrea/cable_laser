@@ -14,7 +14,7 @@
 <body>
     <!--Comienzo de Header-->
     <header class="sticky-top container-fluid bg-white">
-            <nav class="navbar navbar-expand-lg container-lg">
+            <nav class="navbar navbar-expand-md container-md">
                 <div class="container-fluid py-2" >
                     <a class="navbar-brand" href="index.html">
                         <img src=".\imagenes\LogoPequeno.png" alt="Logo" width="150" height="70">
@@ -27,7 +27,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto">
+                        <ul class="navbar-nav m-auto text-center">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
@@ -42,8 +42,11 @@
                             </li>
                         </ul>
                         <!-- Boton que llama al modal a través de su ID -->
-                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                        <div class="text-center md-mt-4">
+                            <button class="btn btn-outline-primary me-auto" type="button" data-bs-toggle="modal"
                             data-bs-target="#modalContacto">Te llamamos</button>
+                        </div>
+                        
 
                     </div>
                 </div>
@@ -52,9 +55,9 @@
     <!--Fin de Header-->
 
     <!--Comienzo de Seccion principal-->
-    <section class="container-lg mt-5 bg-ligth">
+    <section class="container-md mt-5 bg-ligth">
         <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-md-6">
                 <p class="mb-3">Cable e internet</p>
                 <h1 class="display-5 mb-4"> Migra a cable Laser Peru y obtén un 50% de dscto en los 3 primeros meses
                 </h1>
@@ -63,7 +66,7 @@
                 <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
                     data-bs-target="#modalContacto">Te llamamos</button>
             </div>
-            <div class="col-sm-12 col-lg-6 ">
+            <div class="col-sm-12 col-md-6 d-none d-sm-none d-md-block">
                 <img src=".\imagenes\banner2.svg" alt="" class="float-end">
             </div>
         </div>
