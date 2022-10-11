@@ -14,43 +14,43 @@
 <body>
     <!--Comienzo de Header-->
     <header class="sticky-top container-fluid bg-white">
-            <nav class="navbar navbar-expand-md container-md">
-                <div class="container-fluid py-2" >
-                    <a class="navbar-brand" href="index.html">
-                        <img src=".\imagenes\LogoPequeno.png" alt="Logo" width="150" height="70">
-                    </a>
-                    <!--ESTE BOTON PERMITE EL COLAPSO-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-md container-md">
+            <div class="container-fluid py-2">
+                <a class="navbar-brand" href="index.html">
+                    <img src=".\imagenes\LogoPequeno.png" alt="Logo" width="150" height="70">
+                </a>
+                <!--ESTE BOTON PERMITE EL COLAPSO-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto text-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contáctanos</a>
-                            </li>
-                        </ul>
-                        <!-- Boton que llama al modal a través de su ID -->
-                        <div class="text-center md-mt-4">
-                            <button class="btn btn-outline-primary me-auto" type="button" data-bs-toggle="modal"
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <!-- Boton que llama al modal a través de su ID -->
+                    <div class="text-center md-mt-4">
+                        <button class="btn btn-outline-primary me-auto" type="button" data-bs-toggle="modal"
                             data-bs-target="#modalContacto">Te llamamos</button>
-                        </div>
-                        
-
                     </div>
+
+
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
     <!--Fin de Header-->
 
@@ -73,7 +73,7 @@
 
     </section>
     <!--Fin de Seccion principal-->
-
+    <!--Comienzo de seccion promociones-->
     <section class="container mt-5">
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <div class="col">
@@ -135,7 +135,37 @@
             </div>
         </div>
     </section>
+    <!--Fin de seccion promociones-->
+    <!--Comienzo seccion video-->
+    <section class="container-md mt-md-5 bg-ligth">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-md-start text-center align-self-center">
+                <h1 class="display-5 mb-3 text-primary fw-semibold"> Disfruta de tus series</h1>
+                <p class="mb-5 fs-3">Cámbiate a Cable laser y olvidate de la lentitud. Gracias a nuestra fibra optica
+                    ahora podrás disfrutar de tus contenidos sin esperar a que tu video o juego cargue</p>
 
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="embed-responsive embed-responsive-21by9">
+
+                    <iframe class="embed-responsive-item" width="100%" height="350px"
+                        src="https://www.youtube.com/embed/Uhfzyfe7nT0?controls=0" allowfullscreen="true"
+                        style="border-radius: 20px;"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Fin seccion video-->
+
+    <!--Comienzo footer-->
+    <footer>
+        <div class="mt-5 text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+             
+            ©2022 <a class="text-reset fw-bold" href="https://#">Cable Laser</a> | Todos los derechos reservados
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 
 
@@ -175,14 +205,14 @@
     </div>
     <!-- Fin de contenido de Modal -->
 
-    
+
 
     <!-- JavaScript para bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 
-    
+
 </body>
 
 </html>
