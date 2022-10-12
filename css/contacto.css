@@ -1,0 +1,76 @@
+/*------------------Estilos del formulario------------------*/
+h5{
+    text-align: center;
+    width: 90%;
+}
+
+.columna_cont{
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.fc{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fc input, select {
+    width: 90%;
+    height: 30px;
+    margin: 0.3rem;
+}
+
+.fc textarea {
+    width: 90%;
+    height: 60px;
+    margin: 0.3rem;;
+}
+
+.fc button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: #F58634;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.mapa{
+    padding: 10px;
+    text-align: center;
+}
+
+.link_mapa{
+    width: 90%;
+    height: 300px;
+}
+
+/*----------------Estilos responsive----------------*/
+@media(min-width: 600px){
+    .cont_contacto{
+        display: flex;
+    }
+    
+    .fc{
+        width: 30%;
+        margin: auto;
+        position: absolute;
+    }
+    
+    .mapa{
+        width: 60%;
+        float: right;
+    }
+    
+    .link_mapa{
+        height: 370px;
+    }
+}
