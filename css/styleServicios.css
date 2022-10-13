@@ -1,51 +1,134 @@
-.nav-item ul li a{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    top: 90px;
-    left: -5px;
-    padding: 14px 0px;
-    visibility: hidden;
-    opacity: 1;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    z-index: 10;
-    transition: all 300ms ease;
-    }
+div{
+    background-color: transparent;
+    margin: auto;
+    position: relative;
+ }
  
-    .nav-item ul:hover li a{
-     visibility: visible;
-     opacity: 1;
-     top: 70px;
-    }
+ div ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+ }
  
-    nav-item ul li a::before{
-     content: '';
-     width: 0;
-     height: 0;
-     border-left: 12px solid transparent;
-     border-right: 12px solid transparent;
-     border-bottom: 12px solid white;
-     position: absolute;
-     top:-12px;
-     left: 20px;
-    }
+ div > ul > li{
+    float: left;
+ }
  
-    nav-item ul li a li a{
-     display: block;
-     color: aquamarine;
-     padding: 6px;
-     margin-left: 14px;
-     margin-top: 10px;
-     font-size: 14px;
-     text-transform: uppercase;
-     transition: all 300ms ease;
-    }
+ div ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+ }
  
-    nav-item ul li a li a{
-     background-color: red;
-     color: white;
-     transform: scale(1.1);
-     padding-left: 30px;
-     font-size: 14px;
-    }
+ div ul li a:hover {
+    background-color: white;
+ }
+ 
+ div > ul > li:hover div{
+    display: table;
+ }
+ 
+ 
+ div ul li div {
+    width: 600px;
+    position: absolute;
+    left: 0;
+    background: rgba(243, 238, 238, 0.503);
+    box-sizing: border-box;
+    display: none ;
+ }
+ 
+ div ul li div ul{
+    width: 30%;
+    display: table-cell;
+    border-right: 1px solid rgba(2, 2, 2, 0.5);
+    box-sizing: border-box;
+ }
+ 
+ div ul li div ul:last-child{
+    border: none;
+ }
+ 
+ div ul li div ul .titulo{
+    background-color:transparent;
+    color:transparent;  
+ }
+ 
+ div ul li div ul .titulo a:hover{
+    background: none;
+ }
+ 
+ div ul li div ul li a{
+    color:black; 
+ }
+ 
+ div h1{
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: #333;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    margin: 0;
+    font-family: "Proxima Nova",Arial,sans-serif;
+    text-align: center;
+    padding-bottom: 0;
+ }
+ div h2{
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: "Proxima Nova",Arial,sans-serif;
+    margin: 0 0 15px;
+    line-height: 1.2;
+    text-align: center;
+    color: #0091C4;
+ }
+ 
+ .div > div{
+       -webkit-text-size-adjust: 100%;
+     color: #111;
+     font-size: 16px;
+     line-height: 1.2;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     user-select: none;
+     -webkit-tap-highlight-color: transparent;
+     list-style-type: none;
+     text-align: center;
+     font-family: "Proxima Nova",Arial,sans-serif;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     vertical-align: top;
+     background-size: contain;
+     background-position: center center;
+     background-repeat: no-repeat;
+     box-sizing: border-box;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     overflow: hidden;
+     min-width: 0 !important;
+     min-height: 100px;
+ }
+ 
  

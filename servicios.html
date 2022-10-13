@@ -8,7 +8,7 @@
     <title>Cable Laser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styleServicios.css">
+    <link rel="stylesheet" href="css/servicios.css">
 </head>
 
 <body>
@@ -32,19 +32,28 @@
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Servicios</a>
-                                 <ul> 
-                                    <li><a href="#">SERVICIOS HOGAR</a></li>
-                                    <li><a href="#">INTERNET HOGAR</a></li>
-                                    <li><a href="#">PLANES INTERNET</a></li>
-                                    <li><a href="#">FIBRA OPTICA</a></li>
-                                    <li><a href="#">COBERTURA</a></li>
-                                    <li><a href="#">SERVICIO TECNICOS</a></li>
-                                    <li><a href="#">LLAMA AL 0000-0000</a></li>
-                                    <li><a href="#">WHATSAPP DE SOPORTE</a></li>
-                                    <li><a href="#">PAGA TU RECIBO</a></li>
-                                    <li><a href="#">PREGUNTAS FRECUENTES</a></li>
-                                </ul>
+                                <a class="nav-link" href="#">Servicios</a>
+                                <div>
+
+                                    <ul>
+                                        <li class="titulo"><a href="#"><b>SERVICIO HOGAR</b></a></li>
+                                        <li><a href="">INTERNET HOGAR</a></li>
+                                        <li><a href="#">PLANES INTERNET</a></li>
+                                        <li><a href="#">FIBRA OPTICA</a></li>
+                                        <li><a href="#">COBERTURA</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="titulo"><a href="Servicio_al_cliente.html"><b>SERVICIO TECNICOS</b></a></li>
+                                        <li><a href="tel:000-000">LLAMA AL 0000-0000</a></li>
+                                        <li><a href="https://chat.whatsapp.com/E71SevRQxtVDVmeklfQ4iJ">WHATSAPP DE SOPORTE</a></li>
+                                        <li><a href="#">PAGA TU RECIBO</a></li>
+                                        <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </li>  
+                                
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Nosotros</a>
                             </li>
@@ -62,6 +71,44 @@
     </header>
     <div class="container bg-dark text-primary">
 
+
+
+
+
+
+<!-- Inicio de contenido de Modal -->
+<div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
+                            más.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">celular</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">aceptar terminos y condiciones</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Fin de contenido de Modal -->
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
