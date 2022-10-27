@@ -16,7 +16,7 @@
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg bg-ligth ">
                 <div class="container-fluid py-2">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src=".\imagenes\LogoPequeno.png" alt="Bootstrap" width="150" height="70">
                     </a>
                     <!--ESTE BOTON PERMITE EL COLAPSO-->
@@ -88,7 +88,7 @@
       
       
       
-                        <div class="media media--blazy media--bundle--image media--image is-b-loaded"><img alt="Llama Gratis" class="media__image media__element b-lazy b-loaded" src="http://127.0.0.1:5500/index.html#" width="100" height="100" loading="lazy" typeof="foaf:Image">
+                        <div class="media media--blazy media--bundle--image media--image is-b-loaded"><img alt="Llama Gratis" class="media__image media__element b-lazy b-loaded" src="http://127.0.0.1:5500/index.php#" width="100" height="100" loading="lazy" typeof="foaf:Image">
               </div>
               
         

@@ -17,7 +17,7 @@
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg bg-ligth ">
                 <div class="container-fluid py-2">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src=".\imagenes\LogoPequeno.png" alt="Bootstrap" width="150" height="70">
                     </a>
                     <!--ESTE BOTON PERMITE EL COLAPSO-->
@@ -30,16 +30,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-lg-0 fs-5 fw-bolder">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="servicios.html">Servicios</a>
+                                <a class="nav-link" href="servicios.php">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="nosotros.php">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contactos.html">Contactanos</a>
+                                <a class="nav-link" href="Contactos.php">Contactanos</a>
                             </li>
                         </ul>
                         <!-- Boton que llama al modal a través de su ID -->

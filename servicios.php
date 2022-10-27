@@ -16,7 +16,7 @@
         <div class="container-lg">
             <nav class="navbar navbar-expand-lg bg-ligth ">
                 <div class="container-fluid py-2">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src=".\imagenes\LogoPequeno.png" alt="Bootstrap" width="150" height="70">
                     </a>
                     <!--ESTE BOTON PERMITE EL COLAPSO-->
@@ -44,7 +44,7 @@
                                     </ul>
 
                                     <ul>
-                                        <li class="titulo"><a href="Servicio_al_cliente.html"><b>SERVICIO TECNICOS</b></a></li>
+                                        <li class="titulo"><a href="Servicio_al_cliente.php"><b>SERVICIO TECNICOS</b></a></li>
                                         <li><a href="tel:000-000">LLAMA AL 0000-0000</a></li>
                                         <li><a href="https://chat.whatsapp.com/E71SevRQxtVDVmeklfQ4iJ">WHATSAPP DE SOPORTE</a></li>
                                         <li><a href="#">PAGA TU RECIBO</a></li>
