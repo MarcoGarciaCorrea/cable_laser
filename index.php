@@ -201,17 +201,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form  method="post" action="guardarDatos.php" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
-                                más.</div>
+                            <label for="exampleInputDNI" class="form-label" >DNI</label>
+                            <input type="text" class="form-control" id="dni"
+                                aria-describedby="emailHelp" name="dni">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su información personal con nadie</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">celular</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" class="form-control" id="celular" name="celular">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
