@@ -203,9 +203,9 @@
                 <div class="modal-body">
                     <form  method="post" action="guardarDatos.php" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="exampleInputDNI" class="form-label" >DNI</label>
-                            <input type="text" class="form-control" id="dni"
-                                aria-describedby="emailHelp" name="dni">
+                            <label for="exampleInputNombres" class="form-label" >Nombres</label>
+                            <input type="text" class="form-control" id="nombres"
+                                aria-describedby="emailHelp" name="nombres">
                             <div id="emailHelp" class="form-text">Nunca compartiremos su información personal con nadie</div>
                         </div>
                         <div class="mb-3">

@@ -1,10 +1,10 @@
 <?php
     include('Conexion.php');
-    $dni=$_POST['dni'];
+    $dni=$_POST['nombres'];
     $celular=$_POST['celular'];
    
     
-    $insertar="INSERT INTO llamadas(tipoDocLlamar, nroDocLlamar) VALUES ('$dni', '$celular');";
+    $insertar="INSERT INTO clientes(nombres, celular) VALUES ('$dni', '$celular');";
     
     mysqli_query($conexion, $insertar);
     
