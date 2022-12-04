@@ -104,9 +104,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Registro</h2>
-        <p>Por favor complete este formulario para crear una cuenta.</p>
+    <div class="wrapper container ">
+        <h2 class="text-center">Registro</h2>
+        <p class="text-center">Por favor complete este formulario para crear una cuenta.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Usuario</label>
@@ -123,11 +123,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
-            <div class="form-group">
+            <div class="form-group text-center">
                 <input type="submit" class="btn btn-primary" value="Ingresar">
                 <input type="reset" class="btn btn-default" value="Borrar">
             </div>
-            <p>¿Ya tienes una cuenta? <a href="login.php">Ingresa aquí</a>.</p>
+            <p class="text-center">¿Ya tienes una cuenta? <a href="login.php">Ingresa aquí</a>.</p>
         </form>
     </div>    
 </body>

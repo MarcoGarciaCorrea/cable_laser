@@ -100,8 +100,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Cable Laser</h2>
+    <div class="wrapper container">
+        <h2 class="text-center">Cable Laser</h2>
         <p>Por favor, complete sus credenciales para iniciar sesión.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -114,11 +114,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="password" name="password" class="form-control">
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
-            <div class="form-group">
+            <div class="form-group text-center">
                 <input type="submit" class="btn btn-primary" value="Ingresar">
             </div>
-            <p>¿No tienes una cuenta? <a href="register.php">Regístrate ahora</a>.</p>
+            <p class="text-center">¿No tienes una cuenta? <a href="register.php">Regístrate ahora</a>.</p>
         </form>
     </div>    
+
 </body>
 </html>
