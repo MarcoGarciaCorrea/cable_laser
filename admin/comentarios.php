@@ -13,14 +13,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <?php
     include_once "model/conexion.php";
-    $sentencia = $bd -> query("select * from clientes");
-    $cliente = $sentencia->fetchAll(PDO::FETCH_OBJ);
+    $sentencia = $bd -> query("select * from contactanos");
+    $contactanos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     //print_r($persona);
 ?>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-12">
             <!-- inicio alerta -->
             <?php 
                 if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta'){
@@ -84,34 +84,46 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             ?> 
 
             <!-- fin alerta -->
+
+            
             <div class="card">
                 <div class="card-header">
-                    Lista de personas
+                    Listado de comentarios
                 </div>
-                <div class="p-4">
+                <div class=" p-4">
                     <table class="table align-middle">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Nombre</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Tipo_Doc</th>
+                                <th scope="col">#Documento</th>
+                                <th scope="col">Correo</th>
                                 <th scope="col">Celular</th>
-                                <th scope="col">estado</th>
-                                <th scope="col" colspan="2">Opciones</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Mensaje</th>
+                                <th scope="col">Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             
                             <?php 
-                                foreach($cliente as $dato){ 
+                                foreach($contactanos as $dato){ 
                             ?>
 
                             <tr>
-                                <td scope="row"><?php echo $dato->id; ?></td>
+                                <td scope="row"><?php echo $dato->codContac; ?></td>
                                 <td><?php echo $dato->nombres; ?></td>
+                                <td><?php echo $dato->apellidos; ?></td>
+                                <td><?php echo $dato->tipoDocCont; ?></td>
+                                <td><?php echo $dato->nroDocCont; ?></td>
+                                <td><?php echo $dato->correo; ?></td>
                                 <td><?php echo $dato->celular; ?></td>
-                                <td><?php echo $dato->estado; ?></td>
-                                <td><a class="text-success" href="editar.php?id=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminar.php?codigo=<?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a></td>
+                                <td><?php echo $dato->fecha; ?></td>
+                                <td><?php echo $dato->mensaje; ?></td>
+                                
+                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminarComentario.php?codigo=<?php echo $dato->codContac; ?>"><i class="bi bi-trash"></i></a></td>
                             </tr>
 
                             <?php 
@@ -124,34 +136,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </div>
             </div>
         </div>
-
-        <!--AgregarPersona
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">
-                    Ingresar datos:
-                </div>
-                <form class="p-4" method="POST" action="registrar.php">
-                    <div class="mb-3">
-                        <label class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" name="txtNombre" autofocus required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Edad: </label>
-                        <input type="number" class="form-control" name="txtEdad" autofocus required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Signo: </label>
-                        <input type="text" class="form-control" name="txtSigno" autofocus required>
-                    </div>
-                    <div class="d-grid">
-                        <input type="hidden" name="oculto" value="1">
-                        <input type="submit" class="btn btn-primary" value="Registrar">
-                    </div>
-                </form>
-            </div>
-        </div>
-        -->
     </div>
 </div>
 
